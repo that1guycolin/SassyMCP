@@ -23,7 +23,8 @@ WORKDIR /data
 LABEL org.opencontainers.image.title="SassyMCP" \
       org.opencontainers.image.source="https://github.com/sassyconsultingllc/SassyMCP" \
       org.opencontainers.image.description="SassyMCP stdio server for the Docker MCP catalog" \
-      org.opencontainers.image.licenses="LicenseRef-Proprietary"
+      org.opencontainers.image.licenses="LicenseRef-Proprietary" \
+      org.opencontainers.image.author="Shane Smith <shane@sassyconsultingllc.com>"
 
 # Docker MCP gateway attaches stdin/stdout. Logs stay on stderr.
 ENTRYPOINT ["sassymcp", "--stdio"]
